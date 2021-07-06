@@ -14,3 +14,12 @@
 + Переходим в консоли к папке \OpenServer\domains 
 + Для начала обновить композер composer self-update
 + Вводим для установки Laravel composer create-project laravel/laravel ИмяПапки
+
+Установка полезных плагинов:
++ В самом PhpStorm установить плагин Laravel
++ Установить Laravel DebugBar в папке проекта через консоль: composer require barryvdh/laravel-debugbar --dev
++ В проекте в config/app.php прописать в конце: Barryvdh\Debugbar\ServiceProvider::class,
++ Проверить, что в файле .env: APP_DEBUG=true
++ Установить Laravel Ide-helper: composer require --dev barryvdh/laravel-ide-helper
++ В проекте в config/app.php прописать в конце: Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
++ Затем в консоле: php artisan ide-helper:generate
