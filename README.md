@@ -23,3 +23,25 @@
 + Установить Laravel Ide-helper: composer require --dev barryvdh/laravel-ide-helper
 + В проекте в config/app.php прописать в конце: Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 + Затем в консоле: php artisan ide-helper:generate
+
+Для открытия проекта в браузере вводим следующую команду:
++ php artisan serve
+
+Создание базы данных в проекте:
++ Выбрать в качестве базы Mysql
++ Driver: Mysql for 5.1 User: root Password: root
++ Затем new_Schema и название такое же как и проект
++ В файле .env в качестве названия базы данных указать такую же что и создали, а также User: root Password: root.
++ В проекте app/Providers/AppServiceProvider.php в метод boot добавить: Schema::defaultStringLength(191);
+
+Команда для создании моделей и минраций в проекте:
++ php artisan make: model название -m
+
+Команда для удалений всех таблиц и созданий заново:
++ php artisan migrate:fresh
+
+Команда для создания фейэковых данных:
++ php artisan make:factory названиеFactory --model=названиеМодели
+
+Команда для создание фейковых данных:
+++ php artisan migrate:fresh --seed
