@@ -1,5 +1,5 @@
 body{
-    background-image:  url("../img/background3.jpg") ;
+    background-image:  url("../img/background.jpg") ;
     width: 100%;
     -webkit-background-size: cover;
     background-size: cover;
@@ -8,17 +8,18 @@ body{
 
 }
 
+
+
 nav{
     margin: 0;
-    background-image: url("../img/background3.jpg") ;
+    background-image: url("../img/background.jpg") ;
     font-size: 18px;
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #000000;
+    color: #ffffff;
 
 }
-
 
 .card{
     height: auto;
@@ -59,7 +60,7 @@ nav{
 
 .card-img, .card-author, .card-date, .card-description, .card-header {
     margin-bottom: 15px;
-    color: #000000;
+    color: #ffffff;
 }
 
 
@@ -76,27 +77,27 @@ nav{
     margin-bottom: -10px;
     font-weight: bold;
     font-size: 18px;
-    color: black;
+    color: #ffffff;
 }
 .card-author{
      margin-top: 10px;
      font-weight: bold;
      font-size: 18px;
-     color: black;
+    color: #ffffff;
  }
 
 .card-description{
     margin-top: 10px;
     font-weight: bold;
     font-size: 18px;
-    color: black;
+    color: #ffffff;
 }
 
 .card-date{
     margin-top: 10px;
     font-weight: bold;
     font-size: 18px;
-    color: black;
+    color: #ffffff;
 }
 
 .pagination{

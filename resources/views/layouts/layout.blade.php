@@ -18,20 +18,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="col-6 navbar-nav mr-auto">
             <li class="nav-item active ">
-                <a class="nav-link " style="color: black" href="{{route('blog.index')}}"><i class="fa fa-home fa-fw"
+                <a class="nav-link " style="color: white" href="{{route('blog.index')}}"><i class="fa fa-home fa-fw"
                                                                                             aria-hidden="true"></i>&nbsp;
                     Главная</a>
             </li>
             <li class="nav-item active offset-1 ">
-                <a class="nav-link" style="color: black" href="{{route('blog.create')}}"><i class="fa fa-plus fa-fw"
+                <a class="nav-link" style="color: white" href="{{route('blog.create')}}"><i class="fa fa-plus fa-fw"
                                                                                             aria-hidden="true"></i>&nbsp;
                     Добавить</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0 offset-3" action="{{route('blog.index')}}">
+        <form class="form-inline my-2 my-lg-0 " action="{{route('blog.index')}}">
             <input class="form-control mr-sm-2" name="search" type="search" placeholder="Найти пост"
                    aria-label="Search">
-            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><i class="fa fa-search fa-fw"
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fa fa-search fa-fw"
                                                                                 aria-hidden="true"></i>&nbsp; Поиск
             </button>
         </form>
@@ -39,14 +39,14 @@
             <!-- Authentication Links -->
             @guest
                 <li class="nav-item">
-                    <a class="nav-link" style="color: black" href="{{ route('login') }}">
+                    <a class="nav-link" style="color: white" href="{{ route('login') }}">
                         <i class="fa fa-user-circle fa-fw"
                            aria-hidden="true"></i>&nbsp;
                     </a>
                 </li>
                 @if (Route::has('register'))
                     <li class="nav-item">
-                        <a class="nav-link" style="color: black" href="{{ route('register') }}">
+                        <a class="nav-link" style="color: white" href="{{ route('register') }}">
                             <i class="fa fa-address-card fa-fw"
                                aria-hidden="true"></i>&nbsp;
                         </a>
@@ -55,7 +55,7 @@
             @else
 
                 <li class="nav-item dropdown">
-                    <a id="navbarDropdown" style="color: black" class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    <a id="navbarDropdown" style="color: white" class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                         <i class="fa fa-user-circle fa-fw"
                            aria-hidden="true"></i>&nbsp;  {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
