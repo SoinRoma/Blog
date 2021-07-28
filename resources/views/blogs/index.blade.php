@@ -16,12 +16,13 @@
 
     <div class="row">
         @foreach($blogs as $blog)
-            <div class="col-6">
+            <div class="col-6 cardWidth">
                 <div class="card">
                     <div class="card-header">{{$blog->short_title}}</div>
                     <div class="card-body">
                         <div class="card-img"
-                             style="background-image: url({{$blog->img ?? asset('img/default.jpg')}})"></div>
+                             style="background-image: url({{ 'img/images/'.$blog->img ?? asset('img/images/default.jpg')}})">
+                        </div>
                          <div class="card-author1 ">
                             <div class="authorName">
                                 <i class="fa fa-user fa-fw" aria-hidden="true"></i>: {{$blog->name}}
