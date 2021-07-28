@@ -22,11 +22,12 @@
                     <div class="card-body">
                         <div class="card-img"
                              style="background-image: url({{$blog->img ?? asset('img/default.jpg')}})"></div>
-                        <div class="card-author1 "><i class="fa fa-user fa-fw"
-                                                     aria-hidden="true"></i>: {{$blog->name}}
-
-                            <a href="{{route('blog.show',['id'=>$blog->blog_id])}}" class="btn btn-info " > <i class="fa fa-eye fa-fw"
-                                                                                                               aria-hidden="true"></i>Посмотреть</a>
+                         <div class="card-author1 ">
+                            <div class="authorName">
+                                <i class="fa fa-user fa-fw" aria-hidden="true"></i>: {{$blog->name}}
+                            </div>
+                            <a href="{{route('blog.show',['id'=>$blog->blog_id])}}" class="btn btn-info " >
+                                <i class="fa fa-eye fa-fw" aria-hidden="true"></i>Посмотреть</a>
                         </div>
 
                     </div>
