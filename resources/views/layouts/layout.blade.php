@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<nav class=" navbar navbar-expand-lg navbar-light bg-light">
+<nav class=" navbar navbar-expand-lg navbar-light">
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="col-6 navbar-nav mr-auto">
