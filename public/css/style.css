@@ -20,18 +20,32 @@ nav{
     margin: auto;
 
 }
+
+
+
+
+
 .container{
-   margin-top: 40px; 
+   margin-top: 40px;
 }
 
 .card{
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
     background: rgba(203, 195, 204, 0.26); /* Цвет фона */
     border: 1px outset #282828;
+}
+
+.cardWidth{
+    max-width: 45%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
 }
 
 .card-header{
@@ -118,4 +132,13 @@ nav{
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
 
+@media (max-width: 1195px) {
+    .cardWidth{
+        max-width: 80%;
+        margin: auto;
+    }
+    .row{
+        display: block;
 
+    }
+}
