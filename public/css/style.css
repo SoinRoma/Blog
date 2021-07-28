@@ -79,6 +79,8 @@ nav{
     font-weight: bold;
     font-size: 18px;
     color: #ffffff;
+    display: flex;
+    justify-content: space-between;
 }
 .card-author{
      margin-top: 10px;
