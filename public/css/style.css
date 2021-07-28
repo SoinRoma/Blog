@@ -1,24 +1,27 @@
 body{
-    background-image:  url("../img/background.jpg") ;
+/*     background-image:  url("../img/background.jpg") ; */
+    background-color: #222c3c;
     width: 100%;
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-
-
 }
 
-
-
 nav{
-    margin: 0;
-    background-image: url("../img/background.jpg") ;
+     /* margin: 0; */
+    background-color: #222c3c !important;
+    /* background-image: url(../img/background.jpg); */
     font-size: 18px;
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
+    width: 90%;
+    margin: auto;
 
+}
+.container{
+   margin-top: 40px; 
 }
 
 .card{
@@ -35,8 +38,6 @@ nav{
     text-align: center;
     font-weight: bold;
     font-size: 30px;
-
-
 }
 
 .card-img{
