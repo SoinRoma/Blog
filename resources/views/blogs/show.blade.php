@@ -1,7 +1,7 @@
 @extends('layouts.layout',['title'=>"Пост № $blog->blog_id.$blog->title"])
 
 @section('content')
-    <div class="col-12">
+   <div class="col-10" style="margin: auto; margin-bottom: 70px;">
         <div class="card">
             <div class="card-header">{{$blog->title}}</div>
             <div class="card-body">
