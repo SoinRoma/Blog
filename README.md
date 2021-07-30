@@ -46,4 +46,10 @@
 + php artisan make:factory названиеFactory --model=названиеМодели (например Test)
 
 Команда для создание фейковых данных:
-++ php artisan migrate:fresh --seed
++ php artisan migrate:fresh --seed
+
+Полещные ссылки:
++ Установка Laravel  https://laravel.com/docs/5.8
++ Плагин IDE-helper  https://github.com/barryvdh/laravel-ide-helper
++ Плагин Debugbar    https://github.com/barryvdh/laravel-debugbar
+
