@@ -1,55 +1,71 @@
-# Blog
+<h1 align="center">Blog</h1>
 
-При клонировании проетка в PhpStorm нужно заново скачать node_modules(среда предложит)
+## Описание
+Многострачное приложение для создание постов. Присуствует авторизация на сайте. Не авторизованный 
+пользователь может только просматривать посты. Авторизованный уже может создавать свои посты и редактировать их.
+Присуствует также поиск постов по их названию.
 
-Для запуска  проекта понадобится локальный сервер OpenServer, который нужно запускать заранее. В нём нужно сделать следущее:
-+ В основных настройках поставить галочки на автозапуск сервера и требовать Администратора постоянно.
-+ В настройках кодировки выбрать utf-8 и utf-8_general_ci
-+ В домменах добавить папки с сайтами, которые будут использоваться.
+### Используемые технологии
+![PHP](https://img.shields.io/badge/-PHP-black?style=flat-square&logo=php&logoColor=php)
+![Laravel](https://img.shields.io/badge/-Laravel-black?style=flat-square&logo=laravel&logoColor=laravel)
 
-Затем нужно создать папку в \OpenServer\domains , где будет лежать проект. Открываем эту папку через PhpStorm и делаем следующее:
-+ Заходим в Settings\Languages&Frameworks\PHP и выбираем версию PHP (не ниже 7.1)
-+ И путь интерпретатора (\OpenServer\modules\php\PHP_7._)
+### Используемые плагины/библиотеки
+[![LaravelIdeHelper](https://img.shields.io/badge/-LaravelIdeHelper-black?style=flat-square&logo=laravelidehelper&logoColor=laravelidehelper)](https://github.com/barryvdh/laravel-ide-helper)
+[![LaravelDebugbar](https://img.shields.io/badge/-LaravelDebugbar-black?style=flat-square&logo=laraveldebugbar&logoColor=laraveldebugbar)](https://github.com/barryvdh/laravel-debugbar)
 
-Установка Laravel в проект:
-+ Заходим в OpenServer и выбираем консоль
-+ Переходим в консоли к папке \OpenServer\domains 
-+ Для начала обновить композер composer self-update
-+ Вводим для установки Laravel composer create-project laravel/laravel ИмяПапки (например Test)
+### Предварительные действия
 
-Установка полезных плагинов:
-+ В самом PhpStorm установить плагин Laravel
-+ Установить Laravel DebugBar в папке проекта через консоль: composer require barryvdh/laravel-debugbar --dev
-+ В проекте в config/app.php прописать в конце: Barryvdh\Debugbar\ServiceProvider::class,
-+ Проверить, что в файле .env: APP_DEBUG=true
-+ Установить Laravel Ide-helper: composer require --dev barryvdh/laravel-ide-helper
-+ В проекте в config/app.php прописать в конце: Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
-+ Затем в консоле: php artisan ide-helper:generate
+1 - Установить локальный сервер [OpenServer](https://ospanel.io/).
 
-Для открытия проекта в браузере вводим следующую команду:
-+ php artisan serve
+2 - Настроить OpenServer:
++ В основных настройках поставить галочки на "Автозапуск сервера" и "Требовать учётную запись Администратора".
++ В настройках кодировки выбрать utf-8 и utf-8_general_ci.
++ В настройках доменах добавить папку с проектом.
 
-Создание базы данных в проекте:
-+ Выбрать в качестве базы Mysql
-+ Driver: Mysql for 5.1 User: root Password: root
-+ Затем new_Schema и название такое же как и проект (например Test)
+3 - Обновить Composer для проекта:
++ Заходим в OpenServer и выбираем консоль.
++ Переходим в консоли к папке \OpenServer\domains.
++ Обновить композер.
+```
+composer self-update
+```
+
+4 - Настроить PhpStorm:
++ Заходим в настройки и переходим в раздел Settings\Languages&Frameworks.
++ Дальше в разделе PHP выбираем версию(не ниже 7.1).
++ И указываем путь для интерпретатора (\OpenServer\modules\php\PHP_7.1\php.exe).
++ Установить плагин Laravel.
+
+5 - Создание базы данных в проекте:
++ Выбрать в качестве базы Mysql.
++ Установить драйвер:(Mysql for 5.1). 
++ Указать имя пользователя и пароль(User: root Password: root).
++ Затем добавить new_Schema с таким же названием, как и проект (blog).
 + В файле .env в качестве названия базы данных указать такую же что и создали, а также User: root Password: root.
-+ В проекте app/Providers/AppServiceProvider.php в метод boot добавить: Schema::defaultStringLength(191);
+```
+copy example.env .env
+```
 
-Команда для создании моделей и миграций в проекте:
-+ php artisan make: model название -m
+### Запуск проекта
 
-Команда для удалений всех таблиц и созданий заново:
-+ php artisan migrate:fresh
+1 - Запустить проект в IDE(PhpStorm).
 
-Команда для создания фейковых данных:
-+ php artisan make:factory названиеFactory --model=названиеМодели (например Test)
+2 - Установить все зависимости(IDE предложит сама их скачать).
+```
+npm install
+```
 
-Команда для создание фейковых данных:
-+ php artisan migrate:fresh --seed
+3 - Команда для удалений всех таблиц:
+```
+php artisan migrate:fresh
+```
 
-Полезные ссылки:
-+ Установка Laravel  https://laravel.com/docs/5.8
-+ Плагин IDE-helper  https://github.com/barryvdh/laravel-ide-helper
-+ Плагин Debugbar    https://github.com/barryvdh/laravel-debugbar
+4 - Команда для создание фейковых данных:
+```
+php artisan migrate:fresh --seed
+```
 
+5 - Запуск проекта:
+```
+php artisan serve
+```

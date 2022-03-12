@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('font-awesome/css/font-awesome.min.css')}}">
-    <link rel="shortcut icon" href="{{asset('def.ico')}}">
+    <link rel="shortcut icon" href="{{asset('favicon.png')}}">
     <title>{{$title}}</title>
 </head>
 <body>

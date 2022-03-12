@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel, to provide autocomplete information to your IDE
- * Generated for Laravel 7.24.0 on 2020-08-09 15:30:06.
+ * Generated for Laravel 7.24.0 on 2022-03-12 16:42:04.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -12175,6 +12175,46 @@ namespace Illuminate\Support\Facades {
                         /** @var \Illuminate\Routing\Router $instance */
                         return $instance->macroCall($method, $parameters);
         }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function auth($options = [])
+        {
+                        return \Illuminate\Routing\Router::auth($options);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function resetPassword()
+        {
+                        return \Illuminate\Routing\Router::resetPassword();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function confirmPassword()
+        {
+                        return \Illuminate\Routing\Router::confirmPassword();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function emailVerification()
+        {
+                        return \Illuminate\Routing\Router::emailVerification();
+        }
          
     }
 
@@ -15366,15 +15406,15 @@ namespace Barryvdh\Debugbar {
     /**
      * 
      *
-     * @method static void alert(string $message)
-     * @method static void critical(string $message)
-     * @method static void debug(string $message)
-     * @method static void emergency(string $message)
-     * @method static void error(string $message)
-     * @method static void info(string $message)
-     * @method static void log(string $message)
-     * @method static void notice(string $message)
-     * @method static void warning(string $message)
+     * @method static void alert(mixed $message)
+     * @method static void critical(mixed $message)
+     * @method static void debug(mixed $message)
+     * @method static void emergency(mixed $message)
+     * @method static void error(mixed $message)
+     * @method static void info(mixed $message)
+     * @method static void log(mixed $message)
+     * @method static void notice(mixed $message)
+     * @method static void warning(mixed $message)
      * @see \Barryvdh\Debugbar\LaravelDebugbar
      */ 
     class Facade {
@@ -15588,6 +15628,7 @@ namespace Barryvdh\Debugbar {
          *
          * @param string $label
          * @param \Closure $closure
+         * @return mixed 
          * @static 
          */ 
         public static function measure($label, $closure)
