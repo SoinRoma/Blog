@@ -21,7 +21,7 @@
                     <div class="card-header">{{$blog->short_title}}</div>
                     <div class="card-body">
                         <div class="card-img"
-                             style="background-image: url({{ asset('img/images/default.jpg')}})">
+                             style="background-image: url({{ $blog->img ?? asset('img/images/default.jpg')}})">
                         </div>
                          <div class="card-author1 ">
                             <div class="authorName" style="color: gray">
