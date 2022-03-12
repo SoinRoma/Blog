@@ -65,7 +65,12 @@ php artisan migrate:fresh
 php artisan migrate:fresh --seed
 ```
 
-5 - Запуск проекта:
+5 - Связать папки storage и public:
+```
+php artisan storage:link
+```
+
+6 - Запуск проекта:
 ```
 php artisan serve
 ```

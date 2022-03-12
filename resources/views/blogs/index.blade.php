@@ -21,13 +21,13 @@
                     <div class="card-header">{{$blog->short_title}}</div>
                     <div class="card-body">
                         <div class="card-img"
-                             style="background-image: url({{ 'img/images/'.$blog->img ?? asset('img/images/default.jpg')}})">
+                             style="background-image: url({{ $blog->img ?? asset('img/images/default.jpg')}})">
                         </div>
                          <div class="card-author1 ">
-                            <div class="authorName">
+                            <div class="authorName" style="color: gray">
                                 <i class="fa fa-user fa-fw" aria-hidden="true"></i>: {{$blog->name}}
                             </div>
-                            <a href="{{route('blog.show',['id'=>$blog->blog_id])}}" class="btn btn-info " >
+                            <a href="{{route('blog.show',['id'=>$blog->blog_id])}}" style="color: white" class="btn btn-info " >
                                 <i class="fa fa-eye fa-fw" aria-hidden="true"></i>Посмотреть</a>
                         </div>
 

@@ -13,8 +13,8 @@
         <div class="form-group">
             <input type="file" name="img" style="color: black">
         </div>
-        <input type="submit" value="Редактировать" class="btn btn-outline-dark">
-        <a href="{{route('blog.index')}}" class="btn btn-light"> <i class="fa fa-arrow-left fa-fw" style="color: black"
+        <input type="submit" value="Редактировать" class="btn btn-outline-info">
+        <a href="{{route('blog.index')}}" class="btn btn-primary"> <i class="fa fa-arrow-left fa-fw" style="color: white"
                                                                     aria-hidden="true"></i>На главную</a>
     </form>
 

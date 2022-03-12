@@ -1,5 +1,5 @@
 body{
-    background-color: #222c3c;
+    background-color: #ffffff;
     width: 100%;
     -webkit-background-size: cover;
     background-size: cover;
@@ -7,13 +7,13 @@ body{
 }
 
 nav{
-    background-color: #222c3c !important;
+    background-color: #ffffff !important;
     font-size: 18px;
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
-    width: 90%;
+    width: 75%;
     margin: auto;
 
 }
@@ -55,10 +55,6 @@ nav{
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-box-shadow: -1px 2px 10px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 2px 10px 1px rgba(0,0,0,0.75);
-    box-shadow: -1px 2px 10px 1px rgba(0,0,0,0.75);
-
 }
 .card-img_max{
     width: 100%;
@@ -67,7 +63,7 @@ nav{
 
 .card-img, .card-author, .card-date, .card-description, .card-header {
     margin-bottom: 15px;
-    color: #ffffff;
+    color: #828080;
 }
 
 
@@ -92,27 +88,27 @@ nav{
      margin-top: 10px;
      font-weight: bold;
      font-size: 18px;
-    color: #ffffff;
+    color: gray;
  }
 
 .card-description{
     margin-top: 10px;
     font-weight: bold;
     font-size: 18px;
-    color: #ffffff;
+    color: gray;
 }
 
 .card-date{
     margin-top: 10px;
     font-weight: bold;
     font-size: 18px;
-    color: #ffffff;
+    color: gray;
 }
 
 .pagination{
     margin-top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     margin-bottom: 30px;
 }
 
