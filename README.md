@@ -22,12 +22,12 @@
 + В настройках кодировки выбрать utf-8 и utf-8_general_ci.
 + В настройках доменах добавить папку с проектом.
 
-3 - Обновить Composer для проекта:
+3 - Установить Composer для проекта:
 + Заходим в OpenServer и выбираем консоль.
-+ Переходим в консоли к папке \OpenServer\domains.
++ Переходим в консоли к папке \OpenServer\domains\laravel-blog.
 + Обновить композер.
 ```
-composer self-update
+composer install
 ```
 
 4 - Настроить PhpStorm:
