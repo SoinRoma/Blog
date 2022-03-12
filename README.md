@@ -64,6 +64,7 @@ php artisan migrate:fresh
 ```
 php artisan migrate:fresh --seed
 ```
+Примечание: Фейкер для изображений не работает!
 
 5 - Связать папки storage и public:
 ```
